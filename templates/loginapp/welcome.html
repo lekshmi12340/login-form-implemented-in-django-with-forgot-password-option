@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    p{
+
+    font:100px solid pink
+   }
+   body{
+   background-color:grey}
+
+   a{
+   font:75px solid pink
+   }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="limiter" >
+
+   {% csrf_token %}
+
+    <p style="font-color:white">Welcome to the platform !!!{{loginid}}</p>
+
+    <a href="logout">Logout</a>
+
+
+
+     </div>
+
+
+
+</body>
+</html>

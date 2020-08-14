@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'loginapp/index.html'%}
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="limiter" >
+    <div class="focus-input100" >
+    {% block content %}
+    <form action="" method="POST"  class="login100-form validate-form p-b-33 p-t-5">
+    {% csrf_token %}
+        {{form}}
+        <div><button class="login100-form-btn" type="submit">Submit</button></div>
+     </form>
+    {% endblock %}
+        </div>
+
+     </div>
+
+
+
+</body>
+</html>
